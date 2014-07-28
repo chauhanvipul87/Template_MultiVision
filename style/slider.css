@@ -1,0 +1,179 @@
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+.royalSlider {/*width: 600px;	*/height:600px; position: relative;	direction: ltr;}
+.royalSlider > * {float: left;}
+.rsOverflow {width: 100%; height: 100%;	position: relative;	overflow: hidden; float: left;	-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.rsContainer {position: relative; width: 100%; height: 100%; -webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+.rsArrow,
+.rsThumbsArrow {cursor: pointer;}
+
+.rsThumb {float: left;	position: relative;}
+
+.rsArrow, .rsNav, .rsThumbsArrow {opacity: 1;	-webkit-transition:opacity 0.3s linear;	-moz-transition:opacity 0.3s linear;	-o-transition:opacity 0.3s linear;	transition:opacity 0.3s linear;}
+.rsHidden {opacity: 0;	visibility: hidden;	-webkit-transition:visibility 0s linear 0.3s,opacity 0.3s linear;	-moz-transition:visibility 0s linear 0.3s,opacity 0.3s linear;	-o-transition:visibility 0s linear 0.3s,opacity 0.3s linear;	transition:visibility 0s linear 0.3s,opacity 0.3s linear;}
+
+.rsGCaption {width: 100%; float: left; text-align: center;}
+
+.royalSlider .rsSlide.rsFakePreloader {opacity: 1 !important; -webkit-transition: 0s; -moz-transition: 0s;	-o-transition:  0s;	transition:  0s;display: none;}
+
+.rsSlide {position: absolute; left: 0;	top: 0;	display: block;	overflow: hidden; height: 100%;	width: 100%;}
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {height: auto;}
+
+.rsPreloader {position:absolute;	z-index: 0;	}
+
+.rsNav {-moz-user-select: -moz-none;	-webkit-user-select: none;	user-select: none;}
+.rsNavItem {-webkit-tap-highlight-color:rgba(0,0,0,0.25);}
+
+.rsThumbs {cursor: pointer;	position: relative;	overflow: hidden;	float: left;	z-index: 22;}
+.rsTabs,
+.rsThumbs {	-webkit-tap-highlight-color:rgba(0,0,0,0);	-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+.banner-container {display: block;    height: 100%;    left: 0;    overflow: hidden;    position: absolute;    top: 0;    width: 100%;}
+.rsABlock { right:0; top:0;	position:absolute;	z-index: 14;}
+
+img.rsImg {	max-width: none;}
+.rsNoDrag {	cursor: auto;}
+
+.rsLink {left:0;	top:0;	position:absolute;	width:100%;	height:100%;	display:block;	z-index: 20;	background: url(blank.gif);}
+
+.csslider {width: 100%;}
+.csslider .rsTmb {padding:15px 5px 15px 15px; margin:0 6px; background-color:rgba(255,255,255,0.8)}
+.csslider .rsThumbs .rsThumb {width:192px;	height:70px; color: #626262;  padding-top:7px;}
+.csslider .rsThumbs{width:960px; position:relative; left:50%; margin-left:-480px; padding: 0;}
+.csslider .rsThumbs{position:absolute; float:none; bottom:33%;}
+
+.csslider .rsThumb.rsNavSelected {color: #000;}
+.csslider .rsThumb.rsNavSelected .rsTmb{background-color:#fff}
+
+/*** iPhone App Development Page
+*********************************
+#iphone-app-dev .rsOverflow {height:580px !important;}
+#iphone-app-dev .iphoneslider {width: 100%; height:550px;}
+#iphone-app-dev .iphoneslider .iphoneTmb {padding: 20px 10px 20px 0;}
+#iphone-app-dev .iphoneslider .rsThumbs .rsThumb {width:180px; height: auto; color: #626262;}
+#iphone-app-dev .iphoneslider .rsThumbs .rsThumb:last-child{margin:0px;}
+#iphone-app-dev .iphoneslider .rsThumbs{width:960px; position:absolute; left:50%; margin-left:-490px; padding: 0; bottom:0;}
+#iphone-app-dev .iphoneslider .rsThumb:hover {}
+#iphone-app-dev .iphoneslider .rsThumb.rsNavSelected {color: #000; bottom:10px;}
+#iphone-app-dev .sampleBlock {left:0; top:60px;	width: 100%; max-width: 400px;}
+
+#iphone-app-dev .rsThumbsHor {width: 100%;}
+#iphone-app-dev .rsWithThumbsHor .rsThumbsContainer {position: relative;	height: 100%;}
+#iphone-app-dev .rsThumb {	float: left;	overflow: hidden;	width: 96px;	height: 72px;}
+#iphone-app-dev .rsThumb img {width: 100%;	height: 100%;}
+#iphone-app-dev .rsThumb.rsNavSelected {}
+#iphone-app-dev .rsThumb.rsNavSelected img {opacity: 0.3;	filter: alpha(opacity=30);}
+#iphone-app-dev .rsTmb { display: block; padding-top:20px; margin-right:30px;}
+*/
+/*** Bullets
+**********************************/
+.rsBullets{margin:0 auto; position:relative; width:100%; bottom:0px; z-index:35; padding:4px 0; height:auto; text-align:center; line-height:6px;	overflow: hidden;}
+.rsBullet {width:10px; height:10px; display: inline-block; *display:inline; *zoom:1; padding: 6px 5px 6px 4px;}
+.rsBullet span {display: block; width:10px; height:10px; border-radius: 50%; background: #b7b7b7; cursor:pointer;}
+.rsBullet.rsNavSelected span {background: #3498db;}
+/****************
+*  3. Thumbnails
+*****************/
+
+.rsThumbsHor {width: 100%;/*	height: 72px;*/}
+.rsWithThumbsHor .rsThumbsContainer {position: relative;	height: 100%;}
+.rsThumb {	float: left;	overflow: hidden;	width: 96px;	height: 72px;}
+.rsThumb img {width: 100%;	height: 100%;}
+.rsThumb.rsNavSelected {}
+.rsThumb.rsNavSelected img {opacity: 0.3;	filter: alpha(opacity=30);}
+.rsTmb {	display: block;}
+
+/* Thumbnails arrow icons */
+.rsThumbsArrow {height: 100%;	width: 40px; position:absolute;	display: block;	cursor: pointer; z-index: 21; background-color:#fff;}
+.rsWithThumbsHor .rsThumbsArrowLeft { left: 0; top: 0; }
+.rsWithThumbsHor .rsThumbsArrowRight { right: 0; top:0; }
+.csslider .rsThumbsArrowLeft, .csslider .rsThumbsArrowRight {top: 7px; }
+
+.rsThumbsArrowIcn{width:33px; height:33px; top:50%;	left:50%; margin-top:-17px; margin-left:-17px; position:absolute; cursor:pointer; background: url(../images/rs-black.png);}
+.csslider .rsThumbsArrowIcn, .csslider .rsThumbsArrowIcn{margin-top:-20px;}
+
+.rsWithThumbsHor .rsThumbsArrowLeft .rsThumbsArrowIcn { background-position:0px 0px; }
+.rsWithThumbsHor .rsThumbsArrowRight .rsThumbsArrowIcn { background-position:-37px 0px; }
+
+.rsThumbsArrowDisabled { display: none !important; }
+.rsPreloader {width:20px; height:20px; background-image:url(../images/preloader-white.gif);	left:50%; top:50%; margin-left:-10px; margin-top:-10px;}
+
+.industryslider{ height:450px;}
+.industryslider .rsTmb {padding: 20px 10px 20px 0;}
+.industryslider .rsThumbs .rsThumb {width:188px; height:210px; color: #626262;}
+.industryslider .rsThumbs{position:absolute; background:#efefef;}
+.industryslider .rsThumb:hover {}
+.industryslider .rsThumb.rsNavSelected {color: #000;}
+.industryslider .rsThumbsArrow{background-color:#efefef;}
+
+.industryslider .rsTmb h5 {font-size:17px; line-height:40px; padding:115px 0 0; border-right:0px solid #e3e3e3; text-align:center;}
+.industryslider .rsTmb h5.ic1{background:url(../images/icon-travel.png) no-repeat center top;}
+.industryslider .rsTmb h5.ic2{background:url(../images/icon-insurance.png) no-repeat center top;}
+.industryslider .rsTmb h5.ic3{background:url(../images/icon-entertainment.png) no-repeat center top;}
+.industryslider .rsTmb h5.ic4{background:url(../images/icon_automotive.png) no-repeat center top;}
+.industryslider .rsTmb h5.ic5{background:url(../images/icon-mediacenter.png) no-repeat center top;}
+.industryslider .rsThumb.rsNavSelected .rsTmb div{position:relative; background-color:#3498db; color:#fff;}
+.industryslider .rsThumb.rsNavSelected .rsTmb em{ width: 0; height: 0; border-left:12px solid transparent;	border-right:12px solid transparent; border-top:12px solid #3498db; position:absolute; left:50%; margin-left:-6px; bottom:-12px;}
+.industryslider .rsOverflow {position: absolute; top:230px;}
+.blogslider img.rsImg {	max-width:100%;}
+
+.royalSlider .rsArrow{height:40px;width:30px;top:50%;margin-top:-20px;position:absolute;display:none;cursor:pointer;z-index:21;}
+.royalSlider .rsArrowLeft{left:10px;}
+.royalSlider .rsArrowRight{right:10px;}
+.royalSlider .rsArrowIcn{position:absolute;cursor:pointer;background:#fff url(../images/cs-arrow.png) no-repeat -38px top;border: 1px solid #b0b0b0; -moz-border-radius: 5px; -webkit-border-radius:5px; border-radius:5px; -moz-opacity: 0.70; opacity: 0.70; filter: alpha(opacity=70);	-webkit-transition: opacity .2s; -moz-transition: opacity .2s; -o-transition: opacity .2s; transition: opacity .2s; position: relative; top:0px;width: 30px;height: 38px; }
+.royalSlider .rsArrow:hover{background-color:#fff; -moz-opacity: 1;	opacity: 1;	filter: alpha(opacity=100);}
+.royalSlider .rsArrowLeft .rsArrowIcn{background-position:left top;}
+.royalSlider .rsArrowRight .rsArrowIcn{background-position:-37px 0px;}
+.royalSlider .rsArrowDisabled .rsArrowIcn{opacity:.3 !important;filter:alpha(opacity=30);*display:none;}
+
+
+.homeslider {width: 100%;}
+.sampleBlock {left:0; top:30px;	width: 100%; max-width:360px; z-index:15;}
+
+.homeslider .rsBullets{background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 15%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0) 85%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(15%,rgba(0,0,0,0)), color-stop(50%,rgba(0,0,0,0.7)), color-stop(85%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0) 85%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0) 85%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0) 85%,rgba(0,0,0,0) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 15%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0) 85%,rgba(0,0,0,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+bottom:188px;  padding:6px 0; position:absolute; z-index: 35;}
+.homeslider .rsBullet {height:8px; padding:6px 5px 6px 4px; width:8px;}
+.homeslider .rsBullet.rsNavSelected span {background:#fff;}
+.homeslider .rsBullet span {height:8px; width:8px; background:#9b9ba1;}
+
+.homeslider .rsArrow{height:66px;width:34px;margin-top:-170px;}
+.homeslider .rsArrowLeft{left:20px;}
+.homeslider .rsArrowRight{right:20px;}
+.homeslider .rsArrowIcn{background:url(../images/home-slider-arrow.png) no-repeat 0 0;border:none; -moz-border-radius:0; -webkit-border-radius:0; border-radius:0; width:34px;height:66px; }
+.homeslider .rsArrow:hover{background-color:transparent;}
+.homeslider .rsArrow:hover .rsArrowIcn{-moz-opacity: 1;	opacity: 1;	filter: alpha(opacity=100);}
+.homeslider .rsArrowLeft .rsArrowIcn, .homeslider .rsArrowLeft:hover .rsArrowIcn{background-position:left top;}
+.homeslider .rsArrowRight .rsArrowIcn, .homeslider .rsArrowRight:hover .rsArrowIcn{background-position:-36px top;}
+.homeslider .rsArrowDisabled .rsArrowIcn{opacity:.3 !important;filter:alpha(opacity=30);*display:none;}
+
+.mobileslider .rsArrowIcn{background:url(../images/mobile-slider-arrow.png) no-repeat 0 0;border:none; -moz-border-radius:0; -webkit-border-radius:0; border-radius:0; width:44px;height:44px; }
+.mobileslider .rsArrow:hover{background-color:transparent;}
+.mobileslider .rsArrow{height:44px;width:44px;top:50%;margin-top:-20px;position:absolute;display:none;cursor:pointer;z-index:21;}
+.mobileslider .rsArrowLeft .rsArrowIcn{background-position:left top;}
+.mobileslider .rsArrowRight .rsArrowIcn{background-position:-46px 0px;}
+.mobileslider .rsArrowDisabled .rsArrowIcn{opacity:.4 !important;filter:alpha(opacity=30);*display:none;}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.royalSlider {height:480px;}
+.banner h3, .banner p{display:none;}
+}
+@media only screen and (max-width: 767px) {
+.royalSlider {height:460px;}
+.sampleBlock { opacity:0; visibility:hidden;}
+.img-banner{text-align:center;}
+.home-banner-bg2 .img-banner, .home-banner-bg3 .img-banner, .home-banner-bg4 .img-banner{ margin-top:3%}
+}
+@media only screen and (max-width: 479px) {
+.royalSlider {height:400px;}
+.home-banner-bg2 .img-banner, .home-banner-bg3 .img-banner, .home-banner-bg4 .img-banner{ margin-top:14%}
+}
